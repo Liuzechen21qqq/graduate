@@ -1,8 +1,8 @@
-PWD g:/毕业设计
+PWD g:/github/graduate
 INPUT d:/texlive/texmf.cnf
 INPUT d:/texlive/texmf-dist/web2c/texmf.cnf
 INPUT c:/Users/asus/.texlive2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT g:/毕业设计/2103010312柳泽辰.tex
+INPUT g:/github/graduate/2103010312柳泽辰.tex
 OUTPUT 2103010312柳泽辰.log
 INPUT d:/texlive/texmf-dist/tex/latex/ctex/ctexart.cls
 INPUT d:/texlive/texmf-dist/tex/latex/ctex/ctexart.cls
