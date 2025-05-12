@@ -2166,6 +2166,12 @@ K_0 = \frac{\sum M_v}{\sum M_H} = \frac{452.647}{16.503} = 16.503
 \]
 
 满足稳定性要求。
+
+
+\subsubsection{挡墙的向陆侧倾覆稳定性计算}
+
+挡墙的向陆侧倾覆稳定性计算示意如下：
+
 \subsubsection{挡墙抗倾、抗滑稳定计算成果表}
 下乌仙堤挡墙和白马堤挡墙抗倾覆、抗滑稳定计算成果见表，经计算挡墙的稳定性满足规范要求。
 
@@ -2185,18 +2191,167 @@ K_0 = \frac{\sum M_v}{\sum M_H} = \frac{452.647}{16.503} = 16.503
 \section{水闸设计}
 \subsection{水闸的平面布置}
 \subsection{水闸结构的布置形式}
+
+由于本工程需要布置数量较多的水闸，供可选择的水闸方案也较多。选择 闸为典型闸作为本阶段的设计分析和比较。
+
+\begin{table}[h]
+    \centering
+    \caption{水闸结构方案}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{项目} & \textbf{方案一} & \textbf{方案二} & \textbf{方案三} \\ \hline
+        溢水孔 & 4 孔 $\times$ 10m & 5 孔 $\times$ 16m & 5 孔 $\times$ 16m \\ \hline
+        闸门型式 & 框架式钢闸门 & 弧形钢闸门 & 框架式钢闸门 \\ \hline
+        布置方向 & 顺水流方向 & 顺水流方向 & 顺水流方向 \\ \hline
+        船闸长度（m） & 22.0 & 52.0 & 28.0 \\ \hline
+        闸底板厚度（m） & 1.5 & 1.5 & 1.5 \\ \hline
+        闸墩厚度（m） & 2.5 & 4.0 & 2.0 \\ \hline
+        变形缝间距（m） & 20 & 20 & 19 \\ \hline
+        总宽度（m） & 101 & 100 & 95 \\ \hline
+    \end{tabular}
+    \label{tab:sluice_structure_options}
+\end{table}
+
+由投资金额、当地地基质量，以及对波浪的承载能力的综合考虑，选择方案一作为本工程水闸施工方案。
+
+
+
+
 \subsection{结构设计}
+在水闸上游设置消力池，下游设置由砾砾块石浆砌而成的海漫，闸底设置有 C80PHC 预应力管桩。
 
+\begin{table}[h]
+    \centering
+    \caption{水闸结构设计}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{项目} & \textbf{参数值} \\ \hline
+        上游消力池底高程（m） & -2.7 \\ \hline
+        上游消力池深度（m） & 0.7 \\ \hline
+        上游消力池长度（m） & 24.0 \\ \hline
+        下游消力池水深（m） & 1.50 \\ \hline
+        第一级消力池长度（m） & 26.0 \\ \hline
+        第二级消力池长度（m） & 27.0 \\ \hline
+        下游消力池底高程（m） & -3.50 \\ \hline
+    \end{tabular}
+    \label{tab:sluice_structure_design}
+\end{table}
 \section{排水渠设计}
+依据防洪防潮、新机场建设的需要，拟定排水渠的布置方案。在围区内布置 2 条排水渠，将造地区域分 3 个围区。排水渠两侧护岸采用隔堤式结构设计，两条隔堤采用全抛石断面的结构型式。
+
+\subsubsection{堤顶高程的确定}
+排水渠两侧护岸按隔堤堤顶高程计算，选取 50 年一遇为标准，增加 0.5m 安全超高，拟采用顶部高程为 5.50m。
+
+\subsubsection{排水渠护岸断面结构}
+\begin{table}[h]
+    \centering
+    \caption{排水渠断面结构设计}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{项目} & \textbf{参数值} \\ \hline
+        堤顶高程（m） & 5.50 \\ \hline
+        堤顶材料 & 自然石渣和 C20 松护面的宽度为 8.00m 的道路 \\ \hline
+        一级平台高程（m） & 3.50 \\ \hline
+        一级平台宽度（m） & 3.50 \\ \hline
+        二级平台高程（m） & 0.50 \\ \hline
+        二级平台宽度（m） & 2.50 \\ \hline
+        两级平台之间的坡度 & 1:1.5 \\ \hline
+        涂面与二级平台之间坡度 & 1:2 \\ \hline
+    \end{tabular}
+    \label{tab:drainage_channel_structure}
+\end{table}
+
 \section{龙口设计}
+\subsection{设计标准}
+本工程龙口度汛采用 20 年一遇标准，堵口度汛 10 年一遇高潮位和其典型潮
+型
+\subsection{龙口设计}
+
+\subsection{龙口水力计算}
+根据《堤防工程设计规范》，由围区外设计潮位过程线推求围区内水位过程线，并进而推求涨落潮过程中各项进口水力要素指标。
+
+根据围区进出水量原理，按以下公式进行计算：
+
+\[
+Q_{n+1} = (Q_n + Q_{n+1}^+ + Q_{n+1}^- + Q_{n+1}^*) \Delta t = V_2 - V_1
+\]
+
+式中：
+\begin{itemize}
+    \item $Q_n$ —— 计算时段内陆域水平流量（$\text{m}^3/\text{s}$）；
+    \item $Q_{n+1}^+$ —— 计算时段内水闸进水平均流量（$\text{m}^3/\text{s}$）；
+    \item $Q_{n+1}^-$ —— 计算时段内水闸泄流平均流量（$\text{m}^3/\text{s}$）；
+    \item $Q_{n+1}^*$ —— 计算时段内其他补充或损耗流量（$\text{m}^3/\text{s}$）；
+    \item $\Delta t$ —— 计算时段，单位为 $3600\,\text{s}$；
+    \item $V_2$ —— 计算时段末围区库容（$\text{m}^3$）；
+    \item $V_1$ —— 计算时段初围区库容（$\text{m}^3$）。
+\end{itemize}
+
+\[
+\bar{Q}_{n+1} = 0.5 \times (Q_{n+1} + Q_{n+2}) \tag{9-3}
+\]
+
+式中：
+\begin{itemize}
+    \item $\bar{Q}_{n+1}$ —— 时段平均龙口溢流量（$\text{m}^3/\text{s}$）；
+    \item $Q_{n+1}$ —— 时段初龙口溢流量（$\text{m}^3/\text{s}$）；
+    \item $Q_{n+2}$ —— 时段末龙口溢流量（$\text{m}^3/\text{s}$）。
+\end{itemize}
+
+当 $z < \frac{1}{3}H$ 时，按下列公式进行计算：
+
+\[
+Q_{n+1} = e B \varphi \sqrt{2g z (H - z)} \tag{9-4}
+\]
+
+式中：
+\begin{itemize}
+    \item $e$ —— 一侧收缩系数；
+    \item $\varphi$ —— 流速系数；
+    \item $B$ —— 龙口口顶宽度（$\text{m}$）；
+    \item $H$ —— 堆石体顶部上游水深（$\text{m}$）；
+    \item $z$ —— 上下游落差（$\text{m}$）。
+\end{itemize}
 
 
+当 $z \geq \frac{1}{3}H$ 时，按下列公式进行计算：
+
+\[
+Q_{n+1} = e m B \sqrt{2g H^{1.5}} \tag{3.36}
+\]
+
+式中：
+\begin{itemize}
+    \item $m$ —— 流量系数，取 $0.385$；
+    \item $e$ —— 流速系数；
+    \item $B$ —— 龙口口顶宽度（$\text{m}$）；
+    \item $H$ —— 堆石体顶部上游水深（$\text{m}$）。
+\end{itemize}
+
+利用上述公式，通过 Fortran 程序模拟不同龙口条件下的水力要素变化值。例如：
+\begin{itemize}
+    \item 龙口宽度 $200\,\text{m}$，底槽高程 $2\,\text{m}$ 时的水力计算；
+    \item 龙口宽度 $200\,\text{m}$，底槽高程 $1.5\,\text{m}$ 时的水力计算。
+\end{itemize}
+\subsection{堵口设计}
+\subsection{龙口合龙程序设计方案}
+
+\begin{enumerate}
+    \item 首先采用自卸汽车运输石方，进行平堵作业。从东、西两个石料厂运石同时进占，平堵后口门宽 200m，底槽高程 2.0m。此时最大流速 $V_{\text{max}} = 3.02\,\text{m/s}$。
+    
+    \item 接下来通过自卸汽车运输石方从堤两侧抛填，进行立堵作业，将龙口口门宽度缩窄为 100m，此时最大流速 $V_{\text{max}} = 3.45\,\text{m/s}$。
+    
+    \item 然后进行平堵作业，将龙口底槽高程抬高到 4.0m，此时龙口最大流速 $V_{\text{max}} = 2.64\,\text{m/s}$。
+    
+    \item 最后将口门缩至 50m，此时 $V_{\text{max}} = 2.64\,\text{m/s}$，一口气实现合龙。截流成功后紧跟着开展土方闭气工作，采用桥式土方筑堤机从围区内涂面取土，分层填筑。
+\end{enumerate}
 \section{环境影响评估}
 白马堤工程包括隔堤和海堤以及水闸等建筑物的施工建设，施工将
 影响附近海域的水文动力、泥沙冲淤变化和生态环境。环境影响分析是旨在通过
 分析产生污染物的原因，提出有效的环境保护和管理的具体措施。
 
 \subsection{水文动力影响分析}
+
 
 
 \end{document}
